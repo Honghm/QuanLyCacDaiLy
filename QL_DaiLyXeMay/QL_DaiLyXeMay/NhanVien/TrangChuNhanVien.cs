@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QL_DaiLyXeMay.NhanVien;
+using QL_DaiLyXeMay.QuanLy;
 
 namespace QL_DaiLyXeMay
 {
@@ -120,6 +121,13 @@ namespace QL_DaiLyXeMay
             pnChiTietChucNang.Controls.Add(QuanLyKho);
         }
 
+        //Chức năng thay đổi quy định
+        private void lbThayDoiQuyDinh_Click(object sender, EventArgs e)
+        {
+            ucThayDoiQuyDinh ThayDoiQuyDinh = new ucThayDoiQuyDinh();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(ThayDoiQuyDinh);
+        }
         #endregion
 
         #region Xử lý sự kiện chuột của các label
@@ -273,9 +281,24 @@ namespace QL_DaiLyXeMay
             lbQuanLyKho.ForeColor = Color.Red;
         }
 
+
+        #endregion
+
+        #region lbThayDoiQuyDinh
+        private void lbThayDoiQuyDinh_MouseLeave(object sender, EventArgs e)
+        {
+            lbThayDoiQuyDinh.ForeColor = Color.White;
+        }
+
+        private void lbThayDoiQuyDinh_MouseMove(object sender, MouseEventArgs e)
+        {
+            lbThayDoiQuyDinh.ForeColor = Color.Red;
+        }
+
         #endregion
 
         #endregion
-        
+
+
     }
 }

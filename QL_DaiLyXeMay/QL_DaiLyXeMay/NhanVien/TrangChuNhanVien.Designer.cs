@@ -54,6 +54,7 @@
             this.lbKhoHang = new System.Windows.Forms.Label();
             this.lbLapBaoCao = new System.Windows.Forms.Label();
             this.lbQuanLy = new System.Windows.Forms.Label();
+            this.lbThayDoiQuyDinh = new System.Windows.Forms.Label();
             this.msNhanVien.SuspendLayout();
             this.pnChucNang.SuspendLayout();
             this.pnKhoHang.SuspendLayout();
@@ -120,6 +121,7 @@
             // 
             this.pnChucNang.BackColor = System.Drawing.Color.Transparent;
             this.pnChucNang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnChucNang.Controls.Add(this.lbThayDoiQuyDinh);
             this.pnChucNang.Controls.Add(this.pnKhoHang);
             this.pnChucNang.Controls.Add(this.pnQuanLy);
             this.pnChucNang.Controls.Add(this.pnLapBaoCao);
@@ -139,7 +141,7 @@
             // 
             this.pnKhoHang.Controls.Add(this.lbLapPhieuNhapHang);
             this.pnKhoHang.Controls.Add(this.lbQuanLyKho);
-            this.pnKhoHang.Location = new System.Drawing.Point(34, 433);
+            this.pnKhoHang.Location = new System.Drawing.Point(34, 396);
             this.pnKhoHang.Name = "pnKhoHang";
             this.pnKhoHang.Size = new System.Drawing.Size(148, 61);
             this.pnKhoHang.TabIndex = 6;
@@ -219,7 +221,7 @@
             // 
             this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoThang);
             this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoCongNo);
-            this.pnLapBaoCao.Location = new System.Drawing.Point(34, 304);
+            this.pnLapBaoCao.Location = new System.Drawing.Point(34, 278);
             this.pnLapBaoCao.Name = "pnLapBaoCao";
             this.pnLapBaoCao.Size = new System.Drawing.Size(148, 61);
             this.pnLapBaoCao.TabIndex = 6;
@@ -267,7 +269,7 @@
             // 
             this.pnLapPhieu.Controls.Add(this.lbPhieuXuatHang);
             this.pnLapPhieu.Controls.Add(this.lbPhieuThuTien);
-            this.pnLapPhieu.Location = new System.Drawing.Point(34, 174);
+            this.pnLapPhieu.Location = new System.Drawing.Point(34, 156);
             this.pnLapPhieu.Name = "pnLapPhieu";
             this.pnLapPhieu.Size = new System.Drawing.Size(148, 61);
             this.pnLapPhieu.TabIndex = 13;
@@ -309,7 +311,7 @@
             this.lbLapPhieu.BackColor = System.Drawing.Color.Transparent;
             this.lbLapPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLapPhieu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbLapPhieu.Location = new System.Drawing.Point(9, 142);
+            this.lbLapPhieu.Location = new System.Drawing.Point(9, 124);
             this.lbLapPhieu.Name = "lbLapPhieu";
             this.lbLapPhieu.Size = new System.Drawing.Size(133, 29);
             this.lbLapPhieu.TabIndex = 8;
@@ -336,7 +338,7 @@
             this.lbKhoHang.BackColor = System.Drawing.Color.Transparent;
             this.lbKhoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbKhoHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbKhoHang.Location = new System.Drawing.Point(9, 399);
+            this.lbKhoHang.Location = new System.Drawing.Point(9, 362);
             this.lbKhoHang.Name = "lbKhoHang";
             this.lbKhoHang.Size = new System.Drawing.Size(129, 29);
             this.lbKhoHang.TabIndex = 3;
@@ -351,7 +353,7 @@
             this.lbLapBaoCao.BackColor = System.Drawing.Color.Transparent;
             this.lbLapBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLapBaoCao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbLapBaoCao.Location = new System.Drawing.Point(9, 263);
+            this.lbLapBaoCao.Location = new System.Drawing.Point(9, 237);
             this.lbLapBaoCao.Name = "lbLapBaoCao";
             this.lbLapBaoCao.Size = new System.Drawing.Size(163, 29);
             this.lbLapBaoCao.TabIndex = 2;
@@ -374,6 +376,20 @@
             this.lbQuanLy.Click += new System.EventHandler(this.lbQuanLy_Click);
             this.lbQuanLy.MouseLeave += new System.EventHandler(this.lbQuanLy_MouseLeave);
             this.lbQuanLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbQuanLy_MouseMove);
+            // 
+            // lbThayDoiQuyDinh
+            // 
+            this.lbThayDoiQuyDinh.BackColor = System.Drawing.Color.Transparent;
+            this.lbThayDoiQuyDinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThayDoiQuyDinh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbThayDoiQuyDinh.Location = new System.Drawing.Point(9, 475);
+            this.lbThayDoiQuyDinh.Name = "lbThayDoiQuyDinh";
+            this.lbThayDoiQuyDinh.Size = new System.Drawing.Size(154, 59);
+            this.lbThayDoiQuyDinh.TabIndex = 14;
+            this.lbThayDoiQuyDinh.Text = "Thay đổi quy định";
+            this.lbThayDoiQuyDinh.Click += new System.EventHandler(this.lbThayDoiQuyDinh_Click);
+            this.lbThayDoiQuyDinh.MouseLeave += new System.EventHandler(this.lbThayDoiQuyDinh_MouseLeave);
+            this.lbThayDoiQuyDinh.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbThayDoiQuyDinh_MouseMove);
             // 
             // TrangChuNhanVien
             // 
@@ -431,5 +447,6 @@
         private System.Windows.Forms.Panel pnQuanLy;
         private System.Windows.Forms.Panel pnLapBaoCao;
         private System.Windows.Forms.Panel pnLapPhieu;
+        private System.Windows.Forms.Label lbThayDoiQuyDinh;
     }
 }

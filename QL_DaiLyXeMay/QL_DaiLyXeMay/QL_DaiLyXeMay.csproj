@@ -52,6 +52,18 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien\ucBaoCaoDoanhSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucBaoCaoDoanhSo.Designer.cs">
+      <DependentUpon>ucBaoCaoDoanhSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\ucBaoCaoNoCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucBaoCaoNoCong.Designer.cs">
+      <DependentUpon>ucBaoCaoNoCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien\ucPhieuThuTien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,6 +89,18 @@
     </Compile>
     <Compile Include="NhanVien\TrangChuNhanVien.Designer.cs">
       <DependentUpon>TrangChuNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\ucThayDoiQuyDinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLy\ucThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>ucThayDoiQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriVien\ucQuanTriVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanTriVien\ucQuanTriVien.Designer.cs">
+      <DependentUpon>ucQuanTriVien.cs</DependentUpon>
     </Compile>
     <Compile Include="ucDangNhap.cs">
       <SubType>UserControl</SubType>
@@ -105,6 +129,12 @@
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucBaoCaoDoanhSo.resx">
+      <DependentUpon>ucBaoCaoDoanhSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucBaoCaoNoCong.resx">
+      <DependentUpon>ucBaoCaoNoCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\ucPhieuThuTien.resx">
       <DependentUpon>ucPhieuThuTien.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +156,12 @@
     </Compile>
     <EmbeddedResource Include="NhanVien\TrangChuNhanVien.resx">
       <DependentUpon>TrangChuNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\ucThayDoiQuyDinh.resx">
+      <DependentUpon>ucThayDoiQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTriVien\ucQuanTriVien.resx">
+      <DependentUpon>ucQuanTriVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucDangNhap.resx">
       <DependentUpon>ucDangNhap.cs</DependentUpon>
