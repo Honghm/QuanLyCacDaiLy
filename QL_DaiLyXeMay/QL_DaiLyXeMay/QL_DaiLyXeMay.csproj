@@ -52,6 +52,18 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien\ucPhieuThuTien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucPhieuThuTien.Designer.cs">
+      <DependentUpon>ucPhieuThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\ucQuanLyKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucQuanLyKho.Designer.cs">
+      <DependentUpon>ucQuanLyKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien\ucTiepNhanDaiLy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,8 +84,32 @@
     <Compile Include="ucDangNhap.Designer.cs">
       <DependentUpon>ucDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien\ucDanhSachDaiLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucDanhSachDaiLy.Designer.cs">
+      <DependentUpon>ucDanhSachDaiLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\ucPhieuXuatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\ucPhieuXuatHang.Designer.cs">
+      <DependentUpon>ucPhieuXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhieuNhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhieuNhapHang.Designer.cs">
+      <DependentUpon>ucPhieuNhapHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucPhieuThuTien.resx">
+      <DependentUpon>ucPhieuThuTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucQuanLyKho.resx">
+      <DependentUpon>ucQuanLyKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\ucTiepNhanDaiLy.resx">
       <DependentUpon>ucTiepNhanDaiLy.cs</DependentUpon>
@@ -93,6 +129,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucDangNhap.resx">
       <DependentUpon>ucDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucDanhSachDaiLy.resx">
+      <DependentUpon>ucDanhSachDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\ucPhieuXuatHang.resx">
+      <DependentUpon>ucPhieuXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhieuNhapHang.resx">
+      <DependentUpon>ucPhieuNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\black_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-paint-brush-stroke-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

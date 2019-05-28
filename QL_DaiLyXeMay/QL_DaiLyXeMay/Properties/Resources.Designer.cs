@@ -63,9 +63,9 @@ namespace QL_DaiLyXeMay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap black_light {
+        internal static System.Drawing.Bitmap blue_paint_brush_stroke_1 {
             get {
-                object obj = ResourceManager.GetObject("black_light", resourceCulture);
+                object obj = ResourceManager.GetObject("blue-paint-brush-stroke-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,16 @@ namespace QL_DaiLyXeMay.Properties {
         internal static System.Drawing.Bitmap ViewMain {
             get {
                 object obj = ResourceManager.GetObject("ViewMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ViewMain1 {
+            get {
+                object obj = ResourceManager.GetObject("ViewMain1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

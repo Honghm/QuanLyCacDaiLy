@@ -36,30 +36,30 @@
             this.tsmiLienHe = new System.Windows.Forms.ToolStripMenuItem();
             this.pnChiTietChucNang = new System.Windows.Forms.Panel();
             this.pnChucNang = new System.Windows.Forms.Panel();
-            this.txbTimKiem = new System.Windows.Forms.TextBox();
-            this.lbQuanLyKho = new System.Windows.Forms.Label();
-            this.lbPhieuThuTien = new System.Windows.Forms.Label();
+            this.pnKhoHang = new System.Windows.Forms.Panel();
             this.lbLapPhieuNhapHang = new System.Windows.Forms.Label();
-            this.lbPhieuXuatHang = new System.Windows.Forms.Label();
-            this.lbLapPhieu = new System.Windows.Forms.Label();
-            this.lbLapBaoCaoCongNo = new System.Windows.Forms.Label();
-            this.lbLapBaoCaoThang = new System.Windows.Forms.Label();
+            this.lbQuanLyKho = new System.Windows.Forms.Label();
+            this.pnQuanLy = new System.Windows.Forms.Panel();
+            this.lbTiepNhanDaiLy = new System.Windows.Forms.Label();
             this.lbDanhSachDaiLy = new System.Windows.Forms.Label();
+            this.pnLapBaoCao = new System.Windows.Forms.Panel();
+            this.lbLapBaoCaoThang = new System.Windows.Forms.Label();
+            this.lbLapBaoCaoCongNo = new System.Windows.Forms.Label();
+            this.txbTimKiem = new System.Windows.Forms.TextBox();
+            this.pnLapPhieu = new System.Windows.Forms.Panel();
+            this.lbPhieuXuatHang = new System.Windows.Forms.Label();
+            this.lbPhieuThuTien = new System.Windows.Forms.Label();
+            this.lbLapPhieu = new System.Windows.Forms.Label();
             this.lbTimKiem = new System.Windows.Forms.Label();
             this.lbKhoHang = new System.Windows.Forms.Label();
             this.lbLapBaoCao = new System.Windows.Forms.Label();
             this.lbQuanLy = new System.Windows.Forms.Label();
-            this.lbTiepNhanDaiLy = new System.Windows.Forms.Label();
-            this.pnQuanLy = new System.Windows.Forms.Panel();
-            this.pnLapPhieu = new System.Windows.Forms.Panel();
-            this.pnLapBaoCao = new System.Windows.Forms.Panel();
-            this.pnKhoHang = new System.Windows.Forms.Panel();
             this.msNhanVien.SuspendLayout();
             this.pnChucNang.SuspendLayout();
-            this.pnQuanLy.SuspendLayout();
-            this.pnLapPhieu.SuspendLayout();
-            this.pnLapBaoCao.SuspendLayout();
             this.pnKhoHang.SuspendLayout();
+            this.pnQuanLy.SuspendLayout();
+            this.pnLapBaoCao.SuspendLayout();
+            this.pnLapPhieu.SuspendLayout();
             this.SuspendLayout();
             // 
             // msNhanVien
@@ -119,7 +119,6 @@
             // pnChucNang
             // 
             this.pnChucNang.BackColor = System.Drawing.Color.Transparent;
-            this.pnChucNang.BackgroundImage = global::QL_DaiLyXeMay.Properties.Resources.black_light;
             this.pnChucNang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnChucNang.Controls.Add(this.pnKhoHang);
             this.pnChucNang.Controls.Add(this.pnQuanLy);
@@ -136,43 +135,15 @@
             this.pnChucNang.Size = new System.Drawing.Size(212, 640);
             this.pnChucNang.TabIndex = 1;
             // 
-            // txbTimKiem
+            // pnKhoHang
             // 
-            this.txbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTimKiem.Location = new System.Drawing.Point(14, 589);
-            this.txbTimKiem.Name = "txbTimKiem";
-            this.txbTimKiem.Size = new System.Drawing.Size(194, 26);
-            this.txbTimKiem.TabIndex = 4;
-            // 
-            // lbQuanLyKho
-            // 
-            this.lbQuanLyKho.AutoSize = true;
-            this.lbQuanLyKho.BackColor = System.Drawing.Color.Transparent;
-            this.lbQuanLyKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuanLyKho.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbQuanLyKho.Location = new System.Drawing.Point(6, 37);
-            this.lbQuanLyKho.Name = "lbQuanLyKho";
-            this.lbQuanLyKho.Size = new System.Drawing.Size(97, 20);
-            this.lbQuanLyKho.TabIndex = 12;
-            this.lbQuanLyKho.Text = "Quản lý kho";
-            this.lbQuanLyKho.Click += new System.EventHandler(this.lbQuanLyKho_Click);
-            this.lbQuanLyKho.MouseLeave += new System.EventHandler(this.lbQuanLyKho_MouseLeave);
-            this.lbQuanLyKho.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbQuanLyKho_MouseMove);
-            // 
-            // lbPhieuThuTien
-            // 
-            this.lbPhieuThuTien.AutoSize = true;
-            this.lbPhieuThuTien.BackColor = System.Drawing.Color.Transparent;
-            this.lbPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhieuThuTien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbPhieuThuTien.Location = new System.Drawing.Point(4, 36);
-            this.lbPhieuThuTien.Name = "lbPhieuThuTien";
-            this.lbPhieuThuTien.Size = new System.Drawing.Size(111, 20);
-            this.lbPhieuThuTien.TabIndex = 11;
-            this.lbPhieuThuTien.Text = "Phiếu thu tiền";
-            this.lbPhieuThuTien.Click += new System.EventHandler(this.lbPhieuThuTien_Click);
-            this.lbPhieuThuTien.MouseLeave += new System.EventHandler(this.lbPhieuThuTien_MouseLeave);
-            this.lbPhieuThuTien.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbPhieuThuTien_MouseMove);
+            this.pnKhoHang.Controls.Add(this.lbLapPhieuNhapHang);
+            this.pnKhoHang.Controls.Add(this.lbQuanLyKho);
+            this.pnKhoHang.Location = new System.Drawing.Point(34, 433);
+            this.pnKhoHang.Name = "pnKhoHang";
+            this.pnKhoHang.Size = new System.Drawing.Size(148, 61);
+            this.pnKhoHang.TabIndex = 6;
+            this.pnKhoHang.Visible = false;
             // 
             // lbLapPhieuNhapHang
             // 
@@ -189,50 +160,70 @@
             this.lbLapPhieuNhapHang.MouseLeave += new System.EventHandler(this.lbLapPhieuNhapHang_MouseLeave);
             this.lbLapPhieuNhapHang.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapPhieuNhapHang_MouseMove);
             // 
-            // lbPhieuXuatHang
+            // lbQuanLyKho
             // 
-            this.lbPhieuXuatHang.AutoSize = true;
-            this.lbPhieuXuatHang.BackColor = System.Drawing.Color.Transparent;
-            this.lbPhieuXuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhieuXuatHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbPhieuXuatHang.Location = new System.Drawing.Point(3, 4);
-            this.lbPhieuXuatHang.Name = "lbPhieuXuatHang";
-            this.lbPhieuXuatHang.Size = new System.Drawing.Size(128, 20);
-            this.lbPhieuXuatHang.TabIndex = 9;
-            this.lbPhieuXuatHang.Text = "Phiếu xuất hàng";
-            this.lbPhieuXuatHang.Click += new System.EventHandler(this.lbPhieuXuatHang_Click);
-            this.lbPhieuXuatHang.MouseLeave += new System.EventHandler(this.lbPhieuXuatHang_MouseLeave);
-            this.lbPhieuXuatHang.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbPhieuXuatHang_MouseMove);
+            this.lbQuanLyKho.AutoSize = true;
+            this.lbQuanLyKho.BackColor = System.Drawing.Color.Transparent;
+            this.lbQuanLyKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuanLyKho.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbQuanLyKho.Location = new System.Drawing.Point(6, 37);
+            this.lbQuanLyKho.Name = "lbQuanLyKho";
+            this.lbQuanLyKho.Size = new System.Drawing.Size(97, 20);
+            this.lbQuanLyKho.TabIndex = 12;
+            this.lbQuanLyKho.Text = "Quản lý kho";
+            this.lbQuanLyKho.Click += new System.EventHandler(this.lbQuanLyKho_Click);
+            this.lbQuanLyKho.MouseLeave += new System.EventHandler(this.lbQuanLyKho_MouseLeave);
+            this.lbQuanLyKho.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbQuanLyKho_MouseMove);
             // 
-            // lbLapPhieu
+            // pnQuanLy
             // 
-            this.lbLapPhieu.AutoSize = true;
-            this.lbLapPhieu.BackColor = System.Drawing.Color.Transparent;
-            this.lbLapPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLapPhieu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbLapPhieu.Location = new System.Drawing.Point(9, 142);
-            this.lbLapPhieu.Name = "lbLapPhieu";
-            this.lbLapPhieu.Size = new System.Drawing.Size(133, 29);
-            this.lbLapPhieu.TabIndex = 8;
-            this.lbLapPhieu.Text = "Lập phiếu";
-            this.lbLapPhieu.Click += new System.EventHandler(this.lbLapPhieu_Click);
-            this.lbLapPhieu.MouseLeave += new System.EventHandler(this.lbLapPhieu_MouseLeave);
-            this.lbLapPhieu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapPhieu_MouseMove);
+            this.pnQuanLy.Controls.Add(this.lbTiepNhanDaiLy);
+            this.pnQuanLy.Controls.Add(this.lbDanhSachDaiLy);
+            this.pnQuanLy.Location = new System.Drawing.Point(34, 47);
+            this.pnQuanLy.Name = "pnQuanLy";
+            this.pnQuanLy.Size = new System.Drawing.Size(148, 61);
+            this.pnQuanLy.TabIndex = 0;
+            this.pnQuanLy.Visible = false;
             // 
-            // lbLapBaoCaoCongNo
+            // lbTiepNhanDaiLy
             // 
-            this.lbLapBaoCaoCongNo.AutoSize = true;
-            this.lbLapBaoCaoCongNo.BackColor = System.Drawing.Color.Transparent;
-            this.lbLapBaoCaoCongNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLapBaoCaoCongNo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbLapBaoCaoCongNo.Location = new System.Drawing.Point(3, 36);
-            this.lbLapBaoCaoCongNo.Name = "lbLapBaoCaoCongNo";
-            this.lbLapBaoCaoCongNo.Size = new System.Drawing.Size(135, 20);
-            this.lbLapBaoCaoCongNo.TabIndex = 7;
-            this.lbLapBaoCaoCongNo.Text = "Báo cáo nợ công";
-            this.lbLapBaoCaoCongNo.Click += new System.EventHandler(this.lbLapBaoCaoCongNo_Click);
-            this.lbLapBaoCaoCongNo.MouseLeave += new System.EventHandler(this.lbLapBaoCaoCongNo_MouseLeave);
-            this.lbLapBaoCaoCongNo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapBaoCaoCongNo_MouseMove);
+            this.lbTiepNhanDaiLy.AutoSize = true;
+            this.lbTiepNhanDaiLy.BackColor = System.Drawing.Color.Transparent;
+            this.lbTiepNhanDaiLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTiepNhanDaiLy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbTiepNhanDaiLy.Location = new System.Drawing.Point(3, 5);
+            this.lbTiepNhanDaiLy.Name = "lbTiepNhanDaiLy";
+            this.lbTiepNhanDaiLy.Size = new System.Drawing.Size(126, 20);
+            this.lbTiepNhanDaiLy.TabIndex = 0;
+            this.lbTiepNhanDaiLy.Text = "Tiếp nhận đại lý";
+            this.lbTiepNhanDaiLy.Click += new System.EventHandler(this.lbTiepNhanDaiLy_Click);
+            this.lbTiepNhanDaiLy.MouseLeave += new System.EventHandler(this.lbTiepNhanDaiLy_MouseLeave);
+            this.lbTiepNhanDaiLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbTiepNhanDaiLy_MouseMove);
+            // 
+            // lbDanhSachDaiLy
+            // 
+            this.lbDanhSachDaiLy.AutoSize = true;
+            this.lbDanhSachDaiLy.BackColor = System.Drawing.Color.Transparent;
+            this.lbDanhSachDaiLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDanhSachDaiLy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDanhSachDaiLy.Location = new System.Drawing.Point(3, 36);
+            this.lbDanhSachDaiLy.Name = "lbDanhSachDaiLy";
+            this.lbDanhSachDaiLy.Size = new System.Drawing.Size(134, 20);
+            this.lbDanhSachDaiLy.TabIndex = 5;
+            this.lbDanhSachDaiLy.Text = "Danh sách đại lý";
+            this.lbDanhSachDaiLy.Click += new System.EventHandler(this.lbDanhSachDaiLy_Click);
+            this.lbDanhSachDaiLy.MouseLeave += new System.EventHandler(this.lbDanhSachDaiLy_MouseLeave);
+            this.lbDanhSachDaiLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbDanhSachDaiLy_MouseMove);
+            // 
+            // pnLapBaoCao
+            // 
+            this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoThang);
+            this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoCongNo);
+            this.pnLapBaoCao.Location = new System.Drawing.Point(34, 304);
+            this.pnLapBaoCao.Name = "pnLapBaoCao";
+            this.pnLapBaoCao.Size = new System.Drawing.Size(148, 61);
+            this.pnLapBaoCao.TabIndex = 6;
+            this.pnLapBaoCao.Visible = false;
             // 
             // lbLapBaoCaoThang
             // 
@@ -249,20 +240,83 @@
             this.lbLapBaoCaoThang.MouseLeave += new System.EventHandler(this.lbLapBaoCaoThang_MouseLeave);
             this.lbLapBaoCaoThang.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapBaoCaoThang_MouseMove);
             // 
-            // lbDanhSachDaiLy
+            // lbLapBaoCaoCongNo
             // 
-            this.lbDanhSachDaiLy.AutoSize = true;
-            this.lbDanhSachDaiLy.BackColor = System.Drawing.Color.Transparent;
-            this.lbDanhSachDaiLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDanhSachDaiLy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbDanhSachDaiLy.Location = new System.Drawing.Point(3, 36);
-            this.lbDanhSachDaiLy.Name = "lbDanhSachDaiLy";
-            this.lbDanhSachDaiLy.Size = new System.Drawing.Size(134, 20);
-            this.lbDanhSachDaiLy.TabIndex = 5;
-            this.lbDanhSachDaiLy.Text = "Danh sách đại lý";
-            this.lbDanhSachDaiLy.Click += new System.EventHandler(this.lbDanhSachDaiLy_Click);
-            this.lbDanhSachDaiLy.MouseLeave += new System.EventHandler(this.lbDanhSachDaiLy_MouseLeave);
-            this.lbDanhSachDaiLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbDanhSachDaiLy_MouseMove);
+            this.lbLapBaoCaoCongNo.AutoSize = true;
+            this.lbLapBaoCaoCongNo.BackColor = System.Drawing.Color.Transparent;
+            this.lbLapBaoCaoCongNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLapBaoCaoCongNo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLapBaoCaoCongNo.Location = new System.Drawing.Point(3, 36);
+            this.lbLapBaoCaoCongNo.Name = "lbLapBaoCaoCongNo";
+            this.lbLapBaoCaoCongNo.Size = new System.Drawing.Size(135, 20);
+            this.lbLapBaoCaoCongNo.TabIndex = 7;
+            this.lbLapBaoCaoCongNo.Text = "Báo cáo nợ công";
+            this.lbLapBaoCaoCongNo.Click += new System.EventHandler(this.lbLapBaoCaoCongNo_Click);
+            this.lbLapBaoCaoCongNo.MouseLeave += new System.EventHandler(this.lbLapBaoCaoCongNo_MouseLeave);
+            this.lbLapBaoCaoCongNo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapBaoCaoCongNo_MouseMove);
+            // 
+            // txbTimKiem
+            // 
+            this.txbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTimKiem.Location = new System.Drawing.Point(14, 589);
+            this.txbTimKiem.Name = "txbTimKiem";
+            this.txbTimKiem.Size = new System.Drawing.Size(194, 26);
+            this.txbTimKiem.TabIndex = 4;
+            // 
+            // pnLapPhieu
+            // 
+            this.pnLapPhieu.Controls.Add(this.lbPhieuXuatHang);
+            this.pnLapPhieu.Controls.Add(this.lbPhieuThuTien);
+            this.pnLapPhieu.Location = new System.Drawing.Point(34, 174);
+            this.pnLapPhieu.Name = "pnLapPhieu";
+            this.pnLapPhieu.Size = new System.Drawing.Size(148, 61);
+            this.pnLapPhieu.TabIndex = 13;
+            this.pnLapPhieu.Visible = false;
+            // 
+            // lbPhieuXuatHang
+            // 
+            this.lbPhieuXuatHang.AutoSize = true;
+            this.lbPhieuXuatHang.BackColor = System.Drawing.Color.Transparent;
+            this.lbPhieuXuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhieuXuatHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbPhieuXuatHang.Location = new System.Drawing.Point(3, 4);
+            this.lbPhieuXuatHang.Name = "lbPhieuXuatHang";
+            this.lbPhieuXuatHang.Size = new System.Drawing.Size(128, 20);
+            this.lbPhieuXuatHang.TabIndex = 9;
+            this.lbPhieuXuatHang.Text = "Phiếu xuất hàng";
+            this.lbPhieuXuatHang.Click += new System.EventHandler(this.lbPhieuXuatHang_Click);
+            this.lbPhieuXuatHang.MouseLeave += new System.EventHandler(this.lbPhieuXuatHang_MouseLeave);
+            this.lbPhieuXuatHang.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbPhieuXuatHang_MouseMove);
+            // 
+            // lbPhieuThuTien
+            // 
+            this.lbPhieuThuTien.AutoSize = true;
+            this.lbPhieuThuTien.BackColor = System.Drawing.Color.Transparent;
+            this.lbPhieuThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhieuThuTien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbPhieuThuTien.Location = new System.Drawing.Point(4, 36);
+            this.lbPhieuThuTien.Name = "lbPhieuThuTien";
+            this.lbPhieuThuTien.Size = new System.Drawing.Size(111, 20);
+            this.lbPhieuThuTien.TabIndex = 11;
+            this.lbPhieuThuTien.Text = "Phiếu thu tiền";
+            this.lbPhieuThuTien.Click += new System.EventHandler(this.lbPhieuThuTien_Click);
+            this.lbPhieuThuTien.MouseLeave += new System.EventHandler(this.lbPhieuThuTien_MouseLeave);
+            this.lbPhieuThuTien.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbPhieuThuTien_MouseMove);
+            // 
+            // lbLapPhieu
+            // 
+            this.lbLapPhieu.AutoSize = true;
+            this.lbLapPhieu.BackColor = System.Drawing.Color.Transparent;
+            this.lbLapPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLapPhieu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLapPhieu.Location = new System.Drawing.Point(9, 142);
+            this.lbLapPhieu.Name = "lbLapPhieu";
+            this.lbLapPhieu.Size = new System.Drawing.Size(133, 29);
+            this.lbLapPhieu.TabIndex = 8;
+            this.lbLapPhieu.Text = "Lập phiếu";
+            this.lbLapPhieu.Click += new System.EventHandler(this.lbLapPhieu_Click);
+            this.lbLapPhieu.MouseLeave += new System.EventHandler(this.lbLapPhieu_MouseLeave);
+            this.lbLapPhieu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbLapPhieu_MouseMove);
             // 
             // lbTimKiem
             // 
@@ -321,61 +375,6 @@
             this.lbQuanLy.MouseLeave += new System.EventHandler(this.lbQuanLy_MouseLeave);
             this.lbQuanLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbQuanLy_MouseMove);
             // 
-            // lbTiepNhanDaiLy
-            // 
-            this.lbTiepNhanDaiLy.AutoSize = true;
-            this.lbTiepNhanDaiLy.BackColor = System.Drawing.Color.Transparent;
-            this.lbTiepNhanDaiLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTiepNhanDaiLy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTiepNhanDaiLy.Location = new System.Drawing.Point(3, 5);
-            this.lbTiepNhanDaiLy.Name = "lbTiepNhanDaiLy";
-            this.lbTiepNhanDaiLy.Size = new System.Drawing.Size(126, 20);
-            this.lbTiepNhanDaiLy.TabIndex = 0;
-            this.lbTiepNhanDaiLy.Text = "Tiếp nhận đại lý";
-            this.lbTiepNhanDaiLy.Click += new System.EventHandler(this.lbTiepNhanDaiLy_Click);
-            this.lbTiepNhanDaiLy.MouseLeave += new System.EventHandler(this.lbTiepNhanDaiLy_MouseLeave);
-            this.lbTiepNhanDaiLy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbTiepNhanDaiLy_MouseMove);
-            // 
-            // pnQuanLy
-            // 
-            this.pnQuanLy.Controls.Add(this.lbTiepNhanDaiLy);
-            this.pnQuanLy.Controls.Add(this.lbDanhSachDaiLy);
-            this.pnQuanLy.Location = new System.Drawing.Point(34, 47);
-            this.pnQuanLy.Name = "pnQuanLy";
-            this.pnQuanLy.Size = new System.Drawing.Size(148, 61);
-            this.pnQuanLy.TabIndex = 0;
-            this.pnQuanLy.Visible = false;
-            // 
-            // pnLapPhieu
-            // 
-            this.pnLapPhieu.Controls.Add(this.lbPhieuXuatHang);
-            this.pnLapPhieu.Controls.Add(this.lbPhieuThuTien);
-            this.pnLapPhieu.Location = new System.Drawing.Point(34, 174);
-            this.pnLapPhieu.Name = "pnLapPhieu";
-            this.pnLapPhieu.Size = new System.Drawing.Size(148, 61);
-            this.pnLapPhieu.TabIndex = 13;
-            this.pnLapPhieu.Visible = false;
-            // 
-            // pnLapBaoCao
-            // 
-            this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoThang);
-            this.pnLapBaoCao.Controls.Add(this.lbLapBaoCaoCongNo);
-            this.pnLapBaoCao.Location = new System.Drawing.Point(34, 304);
-            this.pnLapBaoCao.Name = "pnLapBaoCao";
-            this.pnLapBaoCao.Size = new System.Drawing.Size(148, 61);
-            this.pnLapBaoCao.TabIndex = 6;
-            this.pnLapBaoCao.Visible = false;
-            // 
-            // pnKhoHang
-            // 
-            this.pnKhoHang.Controls.Add(this.lbLapPhieuNhapHang);
-            this.pnKhoHang.Controls.Add(this.lbQuanLyKho);
-            this.pnKhoHang.Location = new System.Drawing.Point(34, 433);
-            this.pnKhoHang.Name = "pnKhoHang";
-            this.pnKhoHang.Size = new System.Drawing.Size(148, 61);
-            this.pnKhoHang.TabIndex = 6;
-            this.pnKhoHang.Visible = false;
-            // 
             // TrangChuNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -391,14 +390,14 @@
             this.msNhanVien.PerformLayout();
             this.pnChucNang.ResumeLayout(false);
             this.pnChucNang.PerformLayout();
-            this.pnQuanLy.ResumeLayout(false);
-            this.pnQuanLy.PerformLayout();
-            this.pnLapPhieu.ResumeLayout(false);
-            this.pnLapPhieu.PerformLayout();
-            this.pnLapBaoCao.ResumeLayout(false);
-            this.pnLapBaoCao.PerformLayout();
             this.pnKhoHang.ResumeLayout(false);
             this.pnKhoHang.PerformLayout();
+            this.pnQuanLy.ResumeLayout(false);
+            this.pnQuanLy.PerformLayout();
+            this.pnLapBaoCao.ResumeLayout(false);
+            this.pnLapBaoCao.PerformLayout();
+            this.pnLapPhieu.ResumeLayout(false);
+            this.pnLapPhieu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

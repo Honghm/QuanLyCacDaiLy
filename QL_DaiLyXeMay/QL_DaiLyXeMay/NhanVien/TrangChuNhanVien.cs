@@ -39,7 +39,9 @@ namespace QL_DaiLyXeMay
         //lbDanhSachDaiLy
         private void lbDanhSachDaiLy_Click(object sender, EventArgs e)
         {
-
+            ucDanhSachDaiLy DanhSachDaiLy = new ucDanhSachDaiLy();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(DanhSachDaiLy);
         }
 
         #endregion
@@ -56,12 +58,16 @@ namespace QL_DaiLyXeMay
 
         private void lbPhieuXuatHang_Click(object sender, EventArgs e)
         {
-
+            ucPhieuXuatHang PhieuXuatHang = new ucPhieuXuatHang();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(PhieuXuatHang);
         }
         
         private void lbPhieuThuTien_Click(object sender, EventArgs e)
         {
-
+            ucPhieuThuTien PhieuThuTien = new ucPhieuThuTien();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(PhieuThuTien);
         }
         #endregion
 
@@ -77,12 +83,16 @@ namespace QL_DaiLyXeMay
         
         private void lbLapBaoCaoThang_Click(object sender, EventArgs e)
         {
-
+            ucBaoCaoDoanhSo BaoCaoDoanhSo = new ucBaoCaoDoanhSo();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(BaoCaoDoanhSo);
         }
 
         private void lbLapBaoCaoCongNo_Click(object sender, EventArgs e)
         {
-
+            ucBaoCaoNoCong BaoCaoNoCong = new ucBaoCaoNoCong();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(BaoCaoNoCong);
         }
 
         #endregion
@@ -98,12 +108,16 @@ namespace QL_DaiLyXeMay
 
         private void lbLapPhieuNhapHang_Click(object sender, EventArgs e)
         {
-
+            ucPhieuNhapHang PhieuNhapHang = new ucPhieuNhapHang();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(PhieuNhapHang);
         }
         
         private void lbQuanLyKho_Click(object sender, EventArgs e)
         {
-
+            ucQuanLyKho QuanLyKho = new ucQuanLyKho();
+            pnChiTietChucNang.Controls.Clear();
+            pnChiTietChucNang.Controls.Add(QuanLyKho);
         }
 
         #endregion
