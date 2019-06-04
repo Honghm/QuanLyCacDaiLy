@@ -35,10 +35,10 @@
             this.cbbQuan = new System.Windows.Forms.ComboBox();
             this.txbEMail = new System.Windows.Forms.TextBox();
             this.cbbLoaiDaiLy = new System.Windows.Forms.ComboBox();
-            this.txbDaiLy = new System.Windows.Forms.TextBox();
+            this.txbDiaChi = new System.Windows.Forms.TextBox();
             this.txbTenDaiLy = new System.Windows.Forms.TextBox();
             this.lbNhanVienTiepNhan = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayTiepNhan = new System.Windows.Forms.DateTimePicker();
             this.txbMaHoSo = new System.Windows.Forms.TextBox();
             this.txbMaNhanVien = new System.Windows.Forms.TextBox();
             this.lbGhiChu = new System.Windows.Forms.Label();
@@ -53,13 +53,14 @@
             this.lbMaHoSo = new System.Windows.Forms.Label();
             this.btnChinhSua = new System.Windows.Forms.Button();
             this.dtgvDanhSachDaiLy = new System.Windows.Forms.DataGridView();
-            this.MaHoSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayTiepNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbThongTinDaiLy = new System.Windows.Forms.Label();
             this.txbTienNo = new System.Windows.Forms.TextBox();
             this.lbTienNo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dtgvTemp = new System.Windows.Forms.DataGridView();
+            this.txbNgayTiepNhan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachDaiLy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // txbGhiChu
@@ -126,13 +127,13 @@
             this.cbbLoaiDaiLy.Size = new System.Drawing.Size(161, 26);
             this.cbbLoaiDaiLy.TabIndex = 43;
             // 
-            // txbDaiLy
+            // txbDiaChi
             // 
-            this.txbDaiLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbDaiLy.Location = new System.Drawing.Point(484, 273);
-            this.txbDaiLy.Name = "txbDaiLy";
-            this.txbDaiLy.Size = new System.Drawing.Size(476, 24);
-            this.txbDaiLy.TabIndex = 42;
+            this.txbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDiaChi.Location = new System.Drawing.Point(484, 273);
+            this.txbDiaChi.Name = "txbDiaChi";
+            this.txbDiaChi.Size = new System.Drawing.Size(476, 24);
+            this.txbDiaChi.TabIndex = 42;
             // 
             // txbTenDaiLy
             // 
@@ -154,15 +155,15 @@
             this.lbNhanVienTiepNhan.Text = "Nhân viên tiếp nhận";
             this.lbNhanVienTiepNhan.Click += new System.EventHandler(this.lbNhanVienTiepNhan_Click);
             // 
-            // dateTimePicker1
+            // dtpNgayTiepNhan
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(707, 113);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
-            this.dateTimePicker1.TabIndex = 39;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 5, 26, 0, 0, 0, 0);
+            this.dtpNgayTiepNhan.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTiepNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTiepNhan.Location = new System.Drawing.Point(937, 113);
+            this.dtpNgayTiepNhan.Name = "dtpNgayTiepNhan";
+            this.dtpNgayTiepNhan.Size = new System.Drawing.Size(19, 22);
+            this.dtpNgayTiepNhan.TabIndex = 39;
+            this.dtpNgayTiepNhan.Value = new System.DateTime(2019, 5, 26, 0, 0, 0, 0);
             // 
             // txbMaHoSo
             // 
@@ -303,24 +304,14 @@
             // 
             this.dtgvDanhSachDaiLy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDanhSachDaiLy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvDanhSachDaiLy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaHoSo,
-            this.NgayTiepNhan});
+            this.dtgvDanhSachDaiLy.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtgvDanhSachDaiLy.Location = new System.Drawing.Point(0, 0);
             this.dtgvDanhSachDaiLy.Name = "dtgvDanhSachDaiLy";
             this.dtgvDanhSachDaiLy.RowTemplate.Height = 24;
             this.dtgvDanhSachDaiLy.Size = new System.Drawing.Size(344, 637);
             this.dtgvDanhSachDaiLy.TabIndex = 51;
-            // 
-            // MaHoSo
-            // 
-            this.MaHoSo.HeaderText = "Mã hồ sơ";
-            this.MaHoSo.Name = "MaHoSo";
-            // 
-            // NgayTiepNhan
-            // 
-            this.NgayTiepNhan.HeaderText = "Ngày tiếp nhận";
-            this.NgayTiepNhan.Name = "NgayTiepNhan";
+            this.dtgvDanhSachDaiLy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDanhSachDaiLy_CellContentClick);
+            this.dtgvDanhSachDaiLy.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvDanhSachDaiLy_CellMouseClick);
             // 
             // lbThongTinDaiLy
             // 
@@ -363,11 +354,29 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "đồng";
             // 
+            // dtgvTemp
+            // 
+            this.dtgvTemp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvTemp.Location = new System.Drawing.Point(138, 640);
+            this.dtgvTemp.Name = "dtgvTemp";
+            this.dtgvTemp.RowTemplate.Height = 24;
+            this.dtgvTemp.Size = new System.Drawing.Size(240, 150);
+            this.dtgvTemp.TabIndex = 56;
+            // 
+            // txbNgayTiepNhan
+            // 
+            this.txbNgayTiepNhan.Location = new System.Drawing.Point(684, 113);
+            this.txbNgayTiepNhan.Name = "txbNgayTiepNhan";
+            this.txbNgayTiepNhan.Size = new System.Drawing.Size(247, 22);
+            this.txbNgayTiepNhan.TabIndex = 57;
+            // 
             // ucDanhSachDaiLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.txbNgayTiepNhan);
+            this.Controls.Add(this.dtgvTemp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbTienNo);
             this.Controls.Add(this.lbTienNo);
@@ -381,10 +390,10 @@
             this.Controls.Add(this.cbbQuan);
             this.Controls.Add(this.txbEMail);
             this.Controls.Add(this.cbbLoaiDaiLy);
-            this.Controls.Add(this.txbDaiLy);
+            this.Controls.Add(this.txbDiaChi);
             this.Controls.Add(this.txbTenDaiLy);
             this.Controls.Add(this.lbNhanVienTiepNhan);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpNgayTiepNhan);
             this.Controls.Add(this.txbMaHoSo);
             this.Controls.Add(this.txbMaNhanVien);
             this.Controls.Add(this.lbGhiChu);
@@ -397,10 +406,12 @@
             this.Controls.Add(this.lbMaNhanVien);
             this.Controls.Add(this.lbNgayTiepNhan);
             this.Controls.Add(this.lbMaHoSo);
-            this.ForeColor = System.Drawing.Color.Transparent;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucDanhSachDaiLy";
             this.Size = new System.Drawing.Size(975, 640);
+            this.Load += new System.EventHandler(this.ucDanhSachDaiLy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachDaiLy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTemp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,10 +426,10 @@
         private System.Windows.Forms.ComboBox cbbQuan;
         private System.Windows.Forms.TextBox txbEMail;
         private System.Windows.Forms.ComboBox cbbLoaiDaiLy;
-        private System.Windows.Forms.TextBox txbDaiLy;
+        private System.Windows.Forms.TextBox txbDiaChi;
         private System.Windows.Forms.TextBox txbTenDaiLy;
         private System.Windows.Forms.Label lbNhanVienTiepNhan;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayTiepNhan;
         private System.Windows.Forms.TextBox txbMaHoSo;
         private System.Windows.Forms.TextBox txbMaNhanVien;
         private System.Windows.Forms.Label lbGhiChu;
@@ -437,7 +448,7 @@
         private System.Windows.Forms.TextBox txbTienNo;
         private System.Windows.Forms.Label lbTienNo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHoSo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTiepNhan;
+        private System.Windows.Forms.DataGridView dtgvTemp;
+        private System.Windows.Forms.TextBox txbNgayTiepNhan;
     }
 }

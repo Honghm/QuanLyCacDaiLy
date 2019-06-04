@@ -46,12 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetData.cs" />
+    <Compile Include="KiemTra.cs" />
     <Compile Include="NhanVien\ucBaoCaoDoanhSo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,12 +93,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NhanVien\TrangChuNhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="NhanVien\TrangChuNhanVien.Designer.cs">
-      <DependentUpon>TrangChuNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="QuanLy\ucThayDoiQuyDinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +129,15 @@
     <Compile Include="ucPhieuNhapHang.Designer.cs">
       <DependentUpon>ucPhieuNhapHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTrangChucNang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTrangChucNang.Designer.cs">
+      <DependentUpon>ucTrangChucNang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,9 +166,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="NhanVien\TrangChuNhanVien.resx">
-      <DependentUpon>TrangChuNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="QuanLy\ucThayDoiQuyDinh.resx">
       <DependentUpon>ucThayDoiQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucPhieuNhapHang.resx">
       <DependentUpon>ucPhieuNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTrangChucNang.resx">
+      <DependentUpon>ucTrangChucNang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

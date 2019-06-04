@@ -41,7 +41,7 @@
             this.lbGhiChu = new System.Windows.Forms.Label();
             this.txbMaNhanVien = new System.Windows.Forms.TextBox();
             this.txbMaHoSo = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTiepNhanHoSo = new System.Windows.Forms.DateTimePicker();
             this.lbNhanVienTiepNhan = new System.Windows.Forms.Label();
             this.txbTenDaiLy = new System.Windows.Forms.TextBox();
             this.txbDaiLy = new System.Windows.Forms.TextBox();
@@ -49,9 +49,10 @@
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.cbbQuan = new System.Windows.Forms.ComboBox();
             this.txbSoDienThoai = new System.Windows.Forms.TextBox();
-            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnTaoHoSo = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.txbGhiChu = new System.Windows.Forms.TextBox();
+            this.txbNgayTiepNhan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbTaoHoSo
@@ -189,15 +190,16 @@
             this.txbMaHoSo.Size = new System.Drawing.Size(158, 22);
             this.txbMaHoSo.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // dtpTiepNhanHoSo
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(558, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(252, 22);
-            this.dateTimePicker1.TabIndex = 15;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 5, 26, 0, 0, 0, 0);
+            this.dtpTiepNhanHoSo.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpTiepNhanHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpTiepNhanHoSo.Location = new System.Drawing.Point(792, 88);
+            this.dtpTiepNhanHoSo.Name = "dtpTiepNhanHoSo";
+            this.dtpTiepNhanHoSo.Size = new System.Drawing.Size(18, 22);
+            this.dtpTiepNhanHoSo.TabIndex = 15;
+            this.dtpTiepNhanHoSo.Value = new System.DateTime(2019, 5, 26, 0, 0, 0, 0);
+            this.dtpTiepNhanHoSo.ValueChanged += new System.EventHandler(this.dtpTiepNhanHoSo_ValueChanged);
             // 
             // lbNhanVienTiepNhan
             // 
@@ -260,15 +262,16 @@
             this.txbSoDienThoai.Size = new System.Drawing.Size(554, 32);
             this.txbSoDienThoai.TabIndex = 22;
             // 
-            // btnLuu
+            // btnTaoHoSo
             // 
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(669, 582);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(92, 37);
-            this.btnLuu.TabIndex = 24;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnTaoHoSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoHoSo.Location = new System.Drawing.Point(662, 582);
+            this.btnTaoHoSo.Name = "btnTaoHoSo";
+            this.btnTaoHoSo.Size = new System.Drawing.Size(148, 37);
+            this.btnTaoHoSo.TabIndex = 24;
+            this.btnTaoHoSo.Text = "Tạo hồ sơ";
+            this.btnTaoHoSo.UseVisualStyleBackColor = true;
+            this.btnTaoHoSo.Click += new System.EventHandler(this.btnTaoHoSo_Click);
             // 
             // btnThoat
             // 
@@ -288,15 +291,24 @@
             this.txbGhiChu.Size = new System.Drawing.Size(359, 144);
             this.txbGhiChu.TabIndex = 26;
             // 
+            // txbNgayTiepNhan
+            // 
+            this.txbNgayTiepNhan.Location = new System.Drawing.Point(561, 88);
+            this.txbNgayTiepNhan.Name = "txbNgayTiepNhan";
+            this.txbNgayTiepNhan.Size = new System.Drawing.Size(227, 22);
+            this.txbNgayTiepNhan.TabIndex = 27;
+            this.txbNgayTiepNhan.TextChanged += new System.EventHandler(this.txbNgayTiepNhan_TextChanged);
+            // 
             // ucTiepNhanDaiLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.txbNgayTiepNhan);
             this.Controls.Add(this.txbGhiChu);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnTaoHoSo);
             this.Controls.Add(this.txbSoDienThoai);
             this.Controls.Add(this.cbbQuan);
             this.Controls.Add(this.txbEmail);
@@ -304,7 +316,7 @@
             this.Controls.Add(this.txbDaiLy);
             this.Controls.Add(this.txbTenDaiLy);
             this.Controls.Add(this.lbNhanVienTiepNhan);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpTiepNhanHoSo);
             this.Controls.Add(this.txbMaHoSo);
             this.Controls.Add(this.txbMaNhanVien);
             this.Controls.Add(this.lbGhiChu);
@@ -321,6 +333,7 @@
             this.DoubleBuffered = true;
             this.Name = "ucTiepNhanDaiLy";
             this.Size = new System.Drawing.Size(975, 640);
+            this.Load += new System.EventHandler(this.ucTiepNhanDaiLy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,7 +343,7 @@
         private System.Windows.Forms.Label lbTaoHoSo;
         private System.Windows.Forms.Label lbMaHoSo;
         private System.Windows.Forms.Label lbNgayTiepNhan;
-        private System.Windows.Forms.Label lbMaNhanVien;
+        public System.Windows.Forms.Label lbMaNhanVien;
         private System.Windows.Forms.Label lbTenDaiLy;
         private System.Windows.Forms.Label lbLoaiDaiLy;
         private System.Windows.Forms.Label lbSoDienThoai;
@@ -340,7 +353,7 @@
         private System.Windows.Forms.Label lbGhiChu;
         private System.Windows.Forms.TextBox txbMaNhanVien;
         private System.Windows.Forms.TextBox txbMaHoSo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpTiepNhanHoSo;
         private System.Windows.Forms.Label lbNhanVienTiepNhan;
         private System.Windows.Forms.TextBox txbTenDaiLy;
         private System.Windows.Forms.TextBox txbDaiLy;
@@ -348,8 +361,9 @@
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.ComboBox cbbQuan;
         private System.Windows.Forms.TextBox txbSoDienThoai;
-        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnTaoHoSo;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.TextBox txbGhiChu;
+        private System.Windows.Forms.TextBox txbNgayTiepNhan;
     }
 }
