@@ -363,7 +363,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnChiTietChucNang;
+        public System.Windows.Forms.Panel pnChiTietChucNang;
         private System.Windows.Forms.Panel pnChucNang;
         private System.Windows.Forms.Label lbThayDoiQuyDinh;
         private System.Windows.Forms.Panel pnKhoHang;

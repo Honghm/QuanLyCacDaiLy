@@ -111,7 +111,6 @@
             this.txbMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbMaNhanVien.Location = new System.Drawing.Point(713, 187);
             this.txbMaNhanVien.Name = "txbMaNhanVien";
-            this.txbMaNhanVien.ReadOnly = true;
             this.txbMaNhanVien.Size = new System.Drawing.Size(243, 26);
             this.txbMaNhanVien.TabIndex = 6;
             // 
@@ -120,7 +119,6 @@
             this.txbChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbChucVu.Location = new System.Drawing.Point(713, 299);
             this.txbChucVu.Name = "txbChucVu";
-            this.txbChucVu.ReadOnly = true;
             this.txbChucVu.Size = new System.Drawing.Size(243, 26);
             this.txbChucVu.TabIndex = 7;
             // 
@@ -129,7 +127,6 @@
             this.txbTenNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTenNhanVien.Location = new System.Drawing.Point(713, 242);
             this.txbTenNhanVien.Name = "txbTenNhanVien";
-            this.txbTenNhanVien.ReadOnly = true;
             this.txbTenNhanVien.Size = new System.Drawing.Size(243, 26);
             this.txbTenNhanVien.TabIndex = 9;
             // 
@@ -149,7 +146,6 @@
             this.txbMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbMatKhau.Location = new System.Drawing.Point(713, 363);
             this.txbMatKhau.Name = "txbMatKhau";
-            this.txbMatKhau.ReadOnly = true;
             this.txbMatKhau.Size = new System.Drawing.Size(243, 26);
             this.txbMatKhau.TabIndex = 11;
             // 
