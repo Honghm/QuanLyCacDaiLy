@@ -37,7 +37,7 @@ namespace QL_DaiLyXeMay
         //lbTiepNhanDaiLy
         private void lbTiepNhanDaiLy_Click(object sender, EventArgs e)
         {
-            ucTiepNhanDaiLy TaoHoSo = new ucTiepNhanDaiLy(DangNhap,this);
+            ucTiepNhanDaiLy TaoHoSo = new ucTiepNhanDaiLy(DangNhap);
             pnChiTietChucNang.Controls.Clear();
             pnChiTietChucNang.Controls.Add(TaoHoSo);
             
@@ -46,7 +46,7 @@ namespace QL_DaiLyXeMay
         //lbDanhSachDaiLy
         private void lbDanhSachDaiLy_Click(object sender, EventArgs e)
         {
-            ucDanhSachDaiLy DanhSachDaiLy = new ucDanhSachDaiLy(this);
+            ucDanhSachDaiLy DanhSachDaiLy = new ucDanhSachDaiLy();
             pnChiTietChucNang.Controls.Clear();
             pnChiTietChucNang.Controls.Add(DanhSachDaiLy);
         }

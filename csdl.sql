@@ -32,6 +32,19 @@ CREATE TABLE DAILY
 ALTER TABLE dbo.DAILY DROP COLUMN MaNhanVien
 ALTER TABLE dbo.DAILY ADD GhiChu NCHAR(250)
 ALTER TABLE dbo.DAILY ADD MaNhanVien CHAR(6)
+INSERT INTO dbo.DAILY( MaDaiLy , TenDaiLy , MaLoaiDaiLy , DienThoai , Email , DiaChi , MaQuan , NgayTiepNhan , SoNo , GhiChu , MaNhanVien )
+VALUES  ( 'DL0001' , -- MaDaiLy - char(6)
+          N'Yamaha 3S Hồng Hải Anh' , -- TenDaiLy - nchar(50)
+          '001' , -- MaLoaiDaiLy - char(3)
+          '01677846295' , -- DienThoai - char(13)
+          'Yamaha3SHongHaiAnh@gmail.com' , -- Email - char(30)
+          N'101 Nơ Trang Long - Phường 11' , -- DiaChi - nchar(300)
+          'Q1' , -- MaQuan - char(4)
+          GETDATE() , -- NgayTiepNhan - date
+          NULL,  -- SoNo - money
+		  '',
+		  'NV0002'
+        )
 
 create table PHIEUTHUTIEN
 (
@@ -115,7 +128,4 @@ create table THAMSO
 
 SELECT MaNhanVien, MatKhau FROM dbo.TAIKHOAN
 
-DELETE FROM dbo.DAILY WHERE MaDaiLy = ''
-SELECT MaLoaiDaiLy FROM dbo.LOAIDAILY WHERE TenLoaiDaiLy = N'ĐL loại 1'
-SELECT * FROM dbo.LOAIDAILY 
-UPDATE dbo.TAIKHOAN SET 
+DELETE FROM dbo.TAIKHOAN WHERE MaNhanVien = ''

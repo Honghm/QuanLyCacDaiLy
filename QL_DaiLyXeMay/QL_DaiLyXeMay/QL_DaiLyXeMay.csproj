@@ -59,7 +59,7 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data.cs" />
+    <Compile Include="GetData.cs" />
     <Compile Include="KiemTra.cs" />
     <Compile Include="NhanVien\ucBaoCaoDoanhSo.cs">
       <SubType>UserControl</SubType>
