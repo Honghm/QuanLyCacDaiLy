@@ -305,7 +305,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(854, 582);
+            this.btnThoat.Location = new System.Drawing.Point(863, 582);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(92, 37);
             this.btnThoat.TabIndex = 11;
@@ -327,6 +327,7 @@
             this.txbNgayTiepNhan.Name = "txbNgayTiepNhan";
             this.txbNgayTiepNhan.Size = new System.Drawing.Size(227, 22);
             this.txbNgayTiepNhan.TabIndex = 1;
+            // 
             // lbNote
             // 
             this.lbNote.AutoSize = true;

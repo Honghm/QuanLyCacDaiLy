@@ -16,5 +16,15 @@ namespace QL_DaiLyXeMay.NhanVien
         {
             InitializeComponent();
         }
+
+        private void lbChiTietBaoCao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucBaoCaoNoCong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
