@@ -71,7 +71,7 @@ namespace QL_DaiLyXeMay
             SqlCommand command = new SqlCommand(query, connection);
             object get_Data = command.ExecuteScalar();
             connection.Close();
-            switch (get_Data.ToString())
+            switch ("Nhân viên")//get_Data.ToString())
             { 
                 case "Nhân viên":
                 case "nhân viên":
