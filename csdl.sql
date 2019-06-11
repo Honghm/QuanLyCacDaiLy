@@ -6,6 +6,10 @@ create table QUAN
 	TenQuan nchar(50),
 	constraint quan_ma_pk primary key(MaQuan)
 )
+INSERT INTO dbo.QUAN
+        ( MaQuan, TenQuan )
+VALUES  ( 'Q1', N'Quận 1'), ( 'Q2', N'Quận 2'), ( 'Q3', N'Quận 3'), ( 'Q4', N'Quận 4'), ( 'Q5', N'Quận 5'),
+( 'Q6', N'Quận 6'), ( 'Q7', N'Quận 7'), ( 'Q8', N'Quận 8'), ( 'Q9', N'Quận 9'), ( 'Q10', N'Quận 10'), ( 'Q11', N'Quận 11'), ( 'Q12', N'Quận 12')
 
 create table LOAIDAILY
 (
@@ -14,6 +18,9 @@ create table LOAIDAILY
 	TienNo money,
 	constraint loaidl_ma_pk primary key(MaLoaiDaiLy)
 )
+INSERT INTO dbo.LOAIDAILY
+        ( MaLoaiDaiLy, TenLoaiDaiLy, TienNo )
+VALUES  ( '001', N'ĐL loại 1', 50000000  ), ( '002', N'ĐL loại 2', 20000000  )
 CREATE TABLE DAILY
 (
 	MaDaiLy char(6),	
@@ -32,6 +39,31 @@ CREATE TABLE DAILY
 ALTER TABLE dbo.DAILY DROP COLUMN MaNhanVien
 ALTER TABLE dbo.DAILY ADD GhiChu NCHAR(250)
 ALTER TABLE dbo.DAILY ADD MaNhanVien CHAR(6)
+INSERT INTO dbo.DAILY
+        ( MaDaiLy ,
+          TenDaiLy ,
+          MaLoaiDaiLy ,
+          DienThoai ,
+          Email ,
+          DiaChi ,
+          MaQuan ,
+          NgayTiepNhan ,
+          SoNo ,
+          GhiChu ,
+          MaNhanVien
+        )
+VALUES  ( 'DL0001' , -- MaDaiLy - char(6)
+          N'Hoàng Nam' , -- TenDaiLy - nchar(50)
+          '001' , -- MaLoaiDaiLy - char(3)
+          '123456789' , -- DienThoai - char(13)
+          'hoangnam@gmail.com' , -- Email - char(30)
+          N'123 Võ Văn Ngân' , -- DiaChi - nchar(300)
+          'Q1' , -- MaQuan - char(4)
+          '5-14-2019' , -- NgayTiepNhan - date
+          0 , -- SoNo - money
+          N'' , -- GhiChu - nvarchar(250)
+          'NV0002'  -- MaNhanVien - char(6)
+        )
 
 create table PHIEUTHUTIEN
 (
@@ -53,7 +85,6 @@ create table TAIKHOAN
 	constraint tk_ma_pk primary key(MaNhanVien)
 )
 
-DROP TABLE dbo.TAIKHOAN
 create table DOANHSO
 (
 	MaDaiLy char(6),
@@ -67,35 +98,53 @@ create table PHIEUXUATHANG
 (
 	MaPhieuXuatHang char(6),
 	MaDaiLy char(6),
-	TongGiaTri money,
-	TraTruoc money,
+	TraTruoc DECIMAL,
 	NgayLap date,
-	constraint pxh_madl_fk foreign key(MaDaiLy) references DAILY(MaDaiLy),
+	MaNhanVien CHAR(6),
+	TienConLai DECIMAL,
+	constraint pxh_madl_fk foreign key(MaDaiLy) references dbo.DAILY(MaDaiLy),
+	constraint pxh_manv_fk foreign KEY(MaNhanVien) references dbo.TAIKHOAN(MaNhanVien),
 	constraint pxh_mapxh_pk primary key(MaPhieuXuatHang)
 )
-alter table PHIEUXUATHANG add TraTruoc money
-alter table PHIEUXUATHANG add MaNhanVien money
+DROP TABLE dbo.PHIEUXUATHANG
 --alter table PHIEUXUATHANG add constraint pxh
 create table MATHANG
 (
 	MaMatHang char(6),
 	TenMatHang nchar(250),
 	SoLuongCon int,
-	Loai varchar(20),
-	DonGia money,
+	DonViTinh nvarchar(20),
+	DonGia DECIMAL,
 	constraint mh_pk primary key(MaMatHang)
 )
+
+ALTER TABLE dbo.MATHANG ADD DonViTinh INT
+DROP TABLE dbo.MATHANG
+
+SELECT MaMatHang FROM dbo.MATHANG
+
+
 create table CHITIETXUAT
 (
-	MaChiTietXuat char(10),
 	MaPhieuXuatHang char(6),
 	MaMatHang char(6),
 	SoLuong int,
-	ThanhTien money,
+	ThanhTien DECIMAL,
 	constraint ctt_mapxh_fk foreign key(MaPhieuXuatHang) references PHIEUXUATHANG(MaPhieuXuatHang),
 	constraint ctt_mamh_fk foreign key(MaMatHang) references MATHANG(MaMatHang),
-	constraint ctt_mctx_pk primary key(MaChiTietXuat)
+	constraint ctt_mctx_pk primary key(MaPhieuXuatHang, MaMatHang)
 )
+INSERT INTO CHITIETXUAT (MaPhieuXuatHang, MaMatHang, SoLuong, ThanhTien) VALUES (, -- MaPhieuXuatHang - 
+, -- MaMatHang - 
+, -- SoLuong - 
+ -- ThanhTien - 
+)
+SELECT CHITIETXUAT.MaMatHang, MATHANG.TenMatHang, MATHANG.DonViTinh, CHITIETXUAT.SoLuong,MATHANG.DonGia, ThanhTien 
+FROM dbo.CHITIETXUAT, dbo.MATHANG, dbo.PHIEUXUATHANG
+WHERE PHIEUXUATHANG.MaPhieuXuatHang = CHITIETXUAT.MaPhieuXuatHang AND CHITIETXUAT.MaMatHang = MATHANG.MaMatHang
+
+DROP TABLE dbo.CHITIETXUAT
+
 create table CONGNO
 (
 	MaDaiLy char(6),
@@ -117,5 +166,5 @@ SELECT MaNhanVien, MatKhau FROM dbo.TAIKHOAN
 
 DELETE FROM dbo.DAILY WHERE MaDaiLy = ''
 SELECT MaLoaiDaiLy FROM dbo.LOAIDAILY WHERE TenLoaiDaiLy = N'ĐL loại 1'
-SELECT * FROM dbo.LOAIDAILY 
-UPDATE dbo.TAIKHOAN SET 
+SELECT MaPhieuXuatHang, NgayLap FROM dbo.PHIEUXUATHANG
+ 

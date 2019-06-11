@@ -65,7 +65,7 @@ namespace QL_DaiLyXeMay
 
         private void lbPhieuXuatHang_Click(object sender, EventArgs e)
         {
-            ucPhieuXuatHang PhieuXuatHang = new ucPhieuXuatHang();
+            ucPhieuXuatHang PhieuXuatHang = new ucPhieuXuatHang(DangNhap,this);
             pnChiTietChucNang.Controls.Clear();
             pnChiTietChucNang.Controls.Add(PhieuXuatHang);
         }

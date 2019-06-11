@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             this.pnTrangChu = new System.Windows.Forms.Panel();
             this.msNhanVien = new System.Windows.Forms.MenuStrip();
             this.tsmiTuyChon = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +41,6 @@
             // pnTrangChu
             // 
             this.pnTrangChu.BackColor = System.Drawing.Color.Transparent;
-            this.pnTrangChu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnTrangChu.BackgroundImage")));
             this.pnTrangChu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnTrangChu.Location = new System.Drawing.Point(-1, 31);
             this.pnTrangChu.Name = "pnTrangChu";
@@ -74,14 +72,14 @@
             // tsmiDangNhapLai
             // 
             this.tsmiDangNhapLai.Name = "tsmiDangNhapLai";
-            this.tsmiDangNhapLai.Size = new System.Drawing.Size(216, 26);
+            this.tsmiDangNhapLai.Size = new System.Drawing.Size(213, 26);
             this.tsmiDangNhapLai.Text = "Quay lại đăng nhập";
             this.tsmiDangNhapLai.Click += new System.EventHandler(this.tsmiDangNhapLai_Click);
             // 
             // tsmiThoat
             // 
             this.tsmiThoat.Name = "tsmiThoat";
-            this.tsmiThoat.Size = new System.Drawing.Size(177, 26);
+            this.tsmiThoat.Size = new System.Drawing.Size(213, 26);
             this.tsmiThoat.Text = "Thoát";
             // 
             // tsmiTroGiup
@@ -100,6 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1192, 676);
             this.Controls.Add(this.msNhanVien);
             this.Controls.Add(this.pnTrangChu);

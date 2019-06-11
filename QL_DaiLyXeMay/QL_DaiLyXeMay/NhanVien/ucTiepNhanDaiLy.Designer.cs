@@ -183,6 +183,7 @@
             this.txbMaNhanVien.Name = "txbMaNhanVien";
             this.txbMaNhanVien.Size = new System.Drawing.Size(158, 22);
             this.txbMaNhanVien.TabIndex = 9;
+            this.txbMaNhanVien.TextChanged += new System.EventHandler(this.txbMaNhanVien_TextChanged);
             // 
             // txbMaHoSo
             // 

@@ -35,10 +35,10 @@ namespace QL_DaiLyXeMay.NhanVien
             else
             {
                 //Lấy mã loại đại lý từ tên loại đại lý
-                string MaLoaiDaiLy = Data.get_Data_of_SomeThing("SELECT MaLoaiDaiLy " +
+                string MaLoaiDaiLy = Data_SQL.get_Data_of_SomeThing("SELECT MaLoaiDaiLy " +
                     "FROM dbo.LOAIDAILY WHERE  TenLoaiDaiLy = N'" + cbbLoaiHoSo.Text + "'").ToString();
                 //Lấy mã quận từ tên quận
-                string MaQuan = Data.get_Data_of_SomeThing("SELECT MaQuan " +
+                string MaQuan = Data_SQL.get_Data_of_SomeThing("SELECT MaQuan " +
                     "FROM dbo.QUAN WHERE  TenQuan = N'" + cbbQuan.Text + "'").ToString();
                 string query = "INSERT INTO dbo.DAILY( MaDaiLy , TenDaiLy , MaLoaiDaiLy , DienThoai , Email , DiaChi , MaQuan , NgayTiepNhan , SoNo , GhiChu , MaNhanVien )" +
                     " VALUES('" + txbMaHoSo.Text + "', "
@@ -52,7 +52,7 @@ namespace QL_DaiLyXeMay.NhanVien
                     + "'0', "
                     + "N'" + txbGhiChu.Text + "', "
                     + "'" + txbMaNhanVien.Text + "')";
-                Data.update_Data(query);
+                Data_SQL.update_Data(query);
                 if (MessageBox.Show("Tạo hồ sơ thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     txbMaHoSo.Text = null;
@@ -67,8 +67,6 @@ namespace QL_DaiLyXeMay.NhanVien
                 }
             }
                
-            
-
         }
 
         private void ucTiepNhanDaiLy_Load(object sender, EventArgs e)
@@ -85,6 +83,11 @@ namespace QL_DaiLyXeMay.NhanVien
         private void btnThoat_Click(object sender, EventArgs e)
         {
             TrangChucNang.pnChiTietChucNang.Controls.Clear();
+        }
+
+        private void txbMaNhanVien_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConnectionString.cs" />
+    <Compile Include="Controllor\ConnectionString.cs" />
+    <Compile Include="Controllor\QTV.cs" />
     <Compile Include="frmDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,8 +60,8 @@
     <Compile Include="frmTrangChu.Designer.cs">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data.cs" />
-    <Compile Include="KiemTra.cs" />
+    <Compile Include="Controllor\Data_SQL.cs" />
+    <Compile Include="Controllor\KiemTra.cs" />
     <Compile Include="NhanVien\ucBaoCaoDoanhSo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,10 +74,10 @@
     <Compile Include="NhanVien\ucBaoCaoNoCong.Designer.cs">
       <DependentUpon>ucBaoCaoNoCong.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien\ucPhieuThuTien.cs">
+    <Compile Include="View\ucPhieuThuTien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NhanVien\ucPhieuThuTien.Designer.cs">
+    <Compile Include="View\ucPhieuThuTien.Designer.cs">
       <DependentUpon>ucPhieuThuTien.cs</DependentUpon>
     </Compile>
     <Compile Include="NhanVien\ucQuanLyKho.cs">
@@ -117,10 +118,10 @@
     <Compile Include="NhanVien\ucDanhSachDaiLy.Designer.cs">
       <DependentUpon>ucDanhSachDaiLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien\ucPhieuXuatHang.cs">
+    <Compile Include="View\ucPhieuXuatHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NhanVien\ucPhieuXuatHang.Designer.cs">
+    <Compile Include="View\ucPhieuXuatHang.Designer.cs">
       <DependentUpon>ucPhieuXuatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="ucPhieuNhapHang.cs">
@@ -147,7 +148,7 @@
     <EmbeddedResource Include="NhanVien\ucBaoCaoNoCong.resx">
       <DependentUpon>ucBaoCaoNoCong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien\ucPhieuThuTien.resx">
+    <EmbeddedResource Include="View\ucPhieuThuTien.resx">
       <DependentUpon>ucPhieuThuTien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\ucQuanLyKho.resx">
@@ -178,7 +179,7 @@
     <EmbeddedResource Include="NhanVien\ucDanhSachDaiLy.resx">
       <DependentUpon>ucDanhSachDaiLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien\ucPhieuXuatHang.resx">
+    <EmbeddedResource Include="View\ucPhieuXuatHang.resx">
       <DependentUpon>ucPhieuXuatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucPhieuNhapHang.resx">
@@ -212,5 +213,6 @@
   <ItemGroup>
     <None Include="Resources\blue-paint-brush-stroke-1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,7 +32,7 @@ namespace QL_DaiLyXeMay
                     {
 
                         ucDangNhap DangNhap = new ucDangNhap(TrangChu);
-                        Data.update_Data("UPDATE dbo.TAIKHOAN SET MatKhau = '" + txbMatKhauMoi.Text + "'");
+                        Data_SQL.update_Data("UPDATE dbo.TAIKHOAN SET MatKhau = '" + txbMatKhauMoi.Text + "'");
                         this.Hide();
                         if (MessageBox.Show("Cập nhật mật khẩu thành công!", "Thông báo", MessageBoxButtons.OK) == DialogResult.OK)
                         {
