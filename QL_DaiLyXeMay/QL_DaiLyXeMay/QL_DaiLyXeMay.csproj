@@ -213,6 +213,9 @@
   <ItemGroup>
     <None Include="Resources\blue-paint-brush-stroke-1.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+>>>>>>> parent of d91014c... Chức năng báo cáo
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

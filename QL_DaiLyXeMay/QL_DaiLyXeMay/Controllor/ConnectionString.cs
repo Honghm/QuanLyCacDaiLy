@@ -8,6 +8,6 @@ namespace QL_DaiLyXeMay
 {
     public class ConnectionString
     {
-        public static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ZBook\Documents\GitHub\QuanLyCacDaiLy\QL_DaiLyXeMay\QL_DaiLyXeMay\QUANLYDAILY.mdf;Integrated Security=True";
+        public static string connectionString = @"Data Source=DESKTOP-9J79O27\MINHHONG_UIT;Initial Catalog=QUANLYDAILY;Integrated Security=True";
     }
 }
